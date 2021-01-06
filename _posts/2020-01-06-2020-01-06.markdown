@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "2020-01-06"
+date:   2020-01-06= 14:055:00 +530
+categories: Javascript
+---
+
+# Primitive type vs Reference type   
+
+## Primitive type   
+  
+값이 담긴 주솟값을 바로 복제   
+  
+```
+let a = "abc";
+let b = a;
+
+주소       1000           1001
+데이터     이름 : a       이름: b
+          값: @5000      값: @5000
+   
+주소       5000           
+데이터     "abc"               
+```
+
+## Reference type   
+
+값이 담긴 주솟값들로 이루어진 묶음을 가리키는 주솟값을 복제   
+
+```
+let obj1 = { a: "abc", b:"def"}; 
+let obj2 = obj1;
+
+주소       1000            1001
+데이터     이름 : obj1     이름: obj2
+          값: @5000       값: @5000
+   
+주소       5000           
+데이터    @7000 ~ @7001 
+
+주소       7000           7001    
+데이터    값: a           값: b
+         "abc"           "def"         
+```
