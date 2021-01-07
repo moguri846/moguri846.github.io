@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2020-01-07"
-date:   2020-01-07= 14:055:00 +530
+date:   2020-01-07= 14:45:00 +530
 categories: Javascript
 ---
 
@@ -51,7 +51,7 @@ console.log(product1.name); // g102 lightsync
 console.log(product2.name); // g102 라이트싱크
 console.log(product1.name === product2.name); // false
 
-// 한 단계 더 들어간 productInfo의 내부 프로퍼티는 기존 데이터를 그래로 참조
+// 한 단계 더 들어간 productInfo의 내부 프로퍼티는 기존 데이터를 그대로 참조
 
 product2.productInfo.price = 21900;
 console.log(product1.productInfo.price); // 21900
