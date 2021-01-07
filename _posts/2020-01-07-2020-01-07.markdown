@@ -1,0 +1,107 @@
+---
+layout: post
+title:  "2020-01-07"
+date:   2020-01-07= 14:055:00 +530
+categories: Javascript
+---
+
+# Immutable Object   
+#### 상태를 바꿀 수 없는 객체   
+
+## 객체의 가변성에 따른 문제
+```
+var product1 = { 
+        name: "g102 lightsync",
+        price: 20000
+};
+function changeName(product, newName) {
+        var newProduct = product;
+        newProduct.name = newName;
+        return newProduct;
+};
+var product2 = changeName(product1, "g102 라이트싱크");
+
+console.log(product1.name); // g102 라이트싱크
+console.log(product2.name); // g102 라이트싱크
+console.log(product1.name === product2.name); // true
+```   
+#### product1과 product2는 같은 곳을 참조하기 때문에 한 곳이 바뀌면 다같이 바뀝니다.
+
+# Shallow Copy, Deep Copy   
+## Shallow Copy 얕은 복사   
+저장된 프로퍼티를 복사할 때 주솟값만 복사
+```
+var product1 = { 
+    name: "g102 lightsync",
+    productInfo : {
+        price: 20000
+    }
+};
+function copyObject(target) {
+    var result = {};
+    for(var prop in target) {
+        result[prop] = target[prop];
+    }
+    return result;
+};
+var product2 = copyObject(product1);
+
+product2.name = "g102 라이트싱크";
+console.log(product1.name); // g102 lightsync
+console.log(product2.name); // g102 라이트싱크
+console.log(product1.name === product2.name); // false
+
+// 한 단계 더 들어간 productInfo의 내부 프로퍼티는 기존 데이터를 그래로 참조
+
+product2.productInfo.price = 21900;
+console.log(product1.productInfo.price); // 21900
+console.log(product2.productInfo.price); // 21900
+console.log(product1.productInfo.price === product2.productInfo.price); // true
+
+var product2.productInfo = copyObject(product1.productInfo);
+
+product2.productInfo.price = 21900;
+console.log(product1.productInfo.price); // 20000
+console.log(product2.productInfo.price); // 21900
+console.log(product1.productInfo.price === product2.productInfo.price); // false
+```
+## Deep Copy 깊은 복사
+객체 내부의 모든 값을 복사해서 완전히 새로운 데이터 만듬
+```
+var product1 = { 
+    name: "g102 lightsync",
+    productInfo : {
+        price: 20000
+    }
+};
+function copyObject(target) {
+    var result = {};
+    if(typeof target === "object" && target !== null) {
+      for(var prop in target) {
+        result[prop] = copyObject(target[prop]);
+    }
+    } else {
+      result = target;
+    }
+    return result;
+};
+var product2 = copyObject(product1);
+
+console.log(product1.name); // g102 lightsync
+console.log(product2.name); // g102 라이트싱크
+console.log(product1.name === product2.name); // false
+
+product2.productInfo.price = 21900;
+console.log(product1.productInfo.price); // 20000
+console.log(product2.productInfo.price); // 21900
+console.log(product1.productInfo.price === product2.productInfo.price); // false
+```
+
+# undefined vs null    
+## undefined   
+값이 존재하지 않을 때 자바스크립트가 엔진이 자동으로 부여
+#### 값을 부여하지 않은 변수
+#### 객체 내부의 존재하지 않는 프로퍼티 접근
+#### return이 없거나 호출되지 않는 함수 실행 결과        
+## null   
+비어있음을 명시적으로 나타냄
