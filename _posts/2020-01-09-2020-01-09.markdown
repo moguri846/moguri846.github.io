@@ -13,8 +13,8 @@ categories: Javascript
 # 전역 공간   
 전역 공간의 this는 전역 객체를 가리킵니다.
 ```
-console.log(this) // Window    
-console.log(window) // Window 
+console.log(this) // window   
+console.log(window) // window
 console.log(this === window) // true
 ```
 
@@ -24,8 +24,8 @@ console.log(this === window) // true
 ## Function   
 ### 독립적인 기능 수행   
 
-   + 함수를 호출하면 this가 지정되지 않음 실행 
-   + 컨텍스트를 활성화 당시 this가 지정되지 않으면 전역 객체를 보기 때문에 window 출력 
+   + 함수를 호출하면 this가 지정되지 않음 
+   + 실행 컨텍스트를 활성화 당시 this가 지정되지 않으면 전역 객체를 보기 때문에 window 출력 
 
 ```
 var func = function() {
