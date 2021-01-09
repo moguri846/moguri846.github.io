@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "2020-01-09"
+date:   2020-01-09= 19:03:00 +530
+categories: Javascript
+---
+
+# this   
+
+### this는 함수를 호출할 때 결정됨   
+
+# 전역 공간   
+전역 공간의 this는 전역 객체를 가리킵니다.
+```
+console.log(this) // Window { .... }   
+console.log(window) // Window { .... }  
+console.log(this === window) // true
+```
+
+# Function vs Method   
+둘의 차이는 독립성 
+
+## Function   
+독립적인 기능 수행   
+
+## Method   
+자신을 호출한 대상 객체에 관한 동작을 수행   
+
+```
+var func = function(x) { 
+    console.log(this, x);
+}
+func(1); // Window { .... } 1
+
+va obj = {
+    method: func
+};
+obj.method(1); // { method: [Function] } 1
+```
+
