@@ -1,19 +1,20 @@
 ---
 layout: post
 title:  "2020-01-09"
-date:   2020-01-09= 19:03:00 +530
+date:   2020-01-09= 17:18:00 +530
 categories: Javascript
 ---
 
 # this   
 
-### this는 함수를 호출할 때 결정됨   
-
+   + ### 함수를 호출할 때 결정됨   
+   + ### 호출한 주체에 대한 정보 담김   
+   
 # 전역 공간   
 전역 공간의 this는 전역 객체를 가리킵니다.
 ```
-console.log(this) // Window { .... }   
-console.log(window) // Window { .... }  
+console.log(this) // Window    
+console.log(window) // Window 
 console.log(this === window) // true
 ```
 
@@ -21,20 +22,123 @@ console.log(this === window) // true
 둘의 차이는 독립성 
 
 ## Function   
-독립적인 기능 수행   
+### 독립적인 기능 수행   
+
+   + 함수를 호출하면 this가 지정되지 않음 실행 
+   + 컨텍스트를 활성화 당시 this가 지정되지 않으면 전역 객체를 보기 때문에 window 출력 
+
+```
+var func = function() {
+    console.log(this); // window
+};
+func();
+```
 
 ## Method   
-자신을 호출한 대상 객체에 관한 동작을 수행   
+### 자신을 호출한 대상 객체에 관한 동작을 수행  
+
+   + 어떤 함수를 메소드로 호출하면 호출 주체는 프로퍼티 앞의 객체가 됨
+   + . 앞에 명시된 객체가 this가 됨 
 
 ```
-var func = function(x) { 
-    console.log(this, x);
+var obj = {
+    outer: function() {
+    console.log(this); // obj
+    }
 }
-func(1); // Window { .... } 1
+obj.outer();
+```
+ex   
+```
+var obj = {
+    outer: function() {
+        console.log(this); // obj
+        var inner = function() {
+            console.log(this); // window
+        }
+        inner();
 
-va obj = {
-    method: func
+        var obj2 = {
+            method: inner
+        };
+        obj2.method(); // obj2
+    }
 };
-obj.method(1); // { method: [Function] } 1
+obj.outer();
+```
+# 바인딩 하지 않는 함수   
+## Arrow Function
+
+실행 컨텍스트를 생성할 때 this 바인딩 과정이 없어짐
+
+```
+bar obj = {
+    outer: function() {
+        console.log(this); // obj
+        var inner = function = () => {
+            console.log(this); // obj
+        }
+    }
+    inner();
+}
+obj.outer();
 ```
 
+# 명시적으로 this 바인딩   
+   + call
+   + apply
+   + bind
+
+## call   
+   + 모든 함수에서 사용가능
+   + this를 특정값으로 지정 가능
+
+```
+const js = {
+    name: "JavaScript"
+};
+
+function showName() {
+    console.log(this.name); // ""
+};
+
+showName.call(js); // JavaScript
+
+function update(birthYear) {
+    this.birthYear = birthYear
+}
+
+update.call(js, 1995); // name: "JavaScript", birthYear: 1995
+
+```
+
+## apply   
+   + call과 비슷함
+   + 매개변수를 배열로 받음
+
+```
+const nums = [1, 2, 3, 4, 5];
+
+// apply
+const min = Math.min.apply(null, nums); // [1, 2, 3, 4, 5]
+
+// call
+const min = Math.min.call(null, ...nums); // 1, 2, 3, 4, 5
+```
+
+## bind   
+함수의 this를 영원히 바꿀 수 있음
+
+```
+const js = {
+    name: "JavaScript"
+};
+function update(birthYear) {
+    this.birthYear = birthYear
+};
+
+const bindUpdate = update.bind(js);
+bindUpdate(1995);
+console.log(js) // name: "JavaScript", birthYear: 1995
+
+```
