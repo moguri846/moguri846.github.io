@@ -121,4 +121,50 @@ Rt = R1 + R2
 ![Alt text](../../../../../img/electricity/R3.png)   
 
 Rt = 
-![Alt text](../../../../../img/electricity/R4.png)
+![Alt text](../../../../../img/electricity/R4.png)   
+
+## 키르히호프 제 1법칙 (전류 법칙)   
+법칙은 전류가 흐르는 길에서 들어오는 전류와 나가는 전류의 합이 같다.   
+
+![Alt text](../../../../../img/electricity/R6.png)   
+
+I = I1 + I2 + I3   
+
+#  전지 접속과 측정   
+  
+![Alt text](../../../../../img/electricity/R7.png)   
+
+I = V/R = E/r + R   
+
+n개 직렬   
+
+I = V/R = nE/nr + R   
+
+## 측정   
+![Alt text](../../../../../img/electricity/R8.png)   
+
+전압계 : **병렬**   
+전류계 : **직렬**   
+
+## 배율기   
+
+100V 측정기로 1000V 측정하고 싶을 때   
+![Alt text](../../../../../img/electricity/R9.png)   
+
+# 휘트스톤 브리지   
+
+![Alt text](../../../../../img/electricity/R10.png)   
+
+   + 전기는 전위차 **높은 곳 -> 낮은 곳으로 이동**   
+   + **검류계에 전류가 흐르지 않으면 평형 상태**
+
+평형: PR = XQ   
+
+```
+if(P = 10, R = 5,  X = ?, Q = 25) {
+    
+    X = PR/Q = 10 * 5/25 = 2[Ω]
+}
+```
+
+
