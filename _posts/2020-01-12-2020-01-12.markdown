@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "2020-01-12"
+date:   2020-01-12= 17:18:00 +530
+categories: Electricity ElectricalTheory
+---
+
+# 전력   
+
+   
+P = **VI** = **I^2R** = **V^2/R**
+
+1 HP = **746w**   
+
+# 전력량   
+
+W = **Pt** = **VIt** = **I^2Rt** = **V^2/Rt** [w * s]
+
+# 줄의 법칙
+전류 -> 열 발생 
+
+## 열량   
+
+1J = **0.24cal**   
+
+H = Pt[J] = **I^2Rt[J]**   
+
+H = **0.24I^2Rt[cal]**   
+
+# 화학작용과 열작용
+
+![Alt text](../../../../../img/electricity/R11.png)   
+
+W = It = KIt = **KQ**  
+
+## 패러데이 법칙   
+
+석출량은 전기량에 비례   
+
+### 분극작용 -> 수소기체 -> 감극제   
+### 국부작용 -> 분순물 -> 수은도금   
+
+## 제벡   
+두 금속 -> 온도 변화 -> 전류
+
+## 펠티에   
+두 금속 -> 전류 -> 온도 변화   
+
+# 정전기의 성질
+
+전기   
+ㅣ 
+--  정전기   (멈춰있는 전기)   
+ㅣ   
+ㅣ-- 동전기(전류) (움직이는 전기)   
+
+## 정전유도   
+
+![Alt text](../../../../../img/electricity/R12.png)   
+
+![Alt text](../../../../../img/electricity/R13.png)   
+
+가운데에 강자성체를 놓으면 힘을 막을 수 있음
+
+## 강자성체   
+
+   + 니켈
+   + 코발트   
+   + 철   
+   + 망간   
+
+같은 극끼리 **반발력**
+
+![Alt text](../../../../../img/electricity/R14.png)   
+
+다른 극 끼리 **흡인력**   
+
+![Alt text](../../../../../img/electricity/R15.png)   
+
+# 쿨롱의 법칙   
+
+![Alt text](../../../../../img/electricity/R16.png)   
+
+F = 1/4πε0 * Q1 Q2/r^2    
+= 9 * 10^9 * Q1 Q2/r^2 
+
+유전율 ε [F / M]
+
+ε0 = 8.855 * 10^-12 [F / M]   
+
+# 자기장과 전위   
+
+## 전위
+![Alt text](../../../../../img/electricity/R17.jpg)   
+[출처](https://m.blog.naver.com/logoseduplay/221277577467)
+
+자기장, 자계, 자장이라 부르고 선은 자기력선이라 부름
+
+밀도 상승 = 자기장의 세기 상승   
+
+![Alt text](../../../../../img/electricity/R18.png)   
+[출처](http://www.sciencenanum.net/physics/electromagnetism/electrostatics_04_02.html)   
+
+전기장, 전계, 전장이라 부르고 선은 전기력선이라 부름   
+
+# 전기장의 세기 [V / M]   
+
+E = N/S   
+
+N = Q/ε
+
+if(진공) N = Q/ε0   
+
+![Alt text](../../../../../img/electricity/R19.png)   
+[출처](http://study.zum.com/book/13154)   
+
+E = 9 * 10^9 * Q/r^2   
+
+## 전위   
+
+9 * 10^9 * Q/r
+
+
+
+
+
+
+
+
+
