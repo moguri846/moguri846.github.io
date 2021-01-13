@@ -1,0 +1,119 @@
+---
+layout: post
+title:  "2020-01-13"
+date:   2020-01-13= 20:32:00 +530
+categories: Electricity ElectricalTheory
+---
+
+# 정전용량과 콘덴서   
+
+![Alt text](../../../../../img/electricity/C.png)   
+[출처](https://www.researchgate.net/figure/Figure-4-basic-structure-of-capacitor_fig4_305115547)   
+
+
+![Alt text](../../../../../img/electricity/C2.png)   
+[출처](https://en.wikipedia.org/wiki/Capacitor)   
+
+## 정전용량   
+
+C = ε A/l [F]   
+
+### 용량을 크게 할려면 ?   
+
+   + 유전율 큰 물질   
+   + 면적을 크게   
+   + 간격 좁게   
+
+## 축적되는 에너지   
+
+W = 1/2 Q V = **1/2 CV^2**   
+Q = C V   
+
+**정전용량을에 비례 전압의 제곱에 비례**   
+
+# 콘덴서의 직, 병렬   
+
+## 직렬   
+
+C1 C2/C1+ C2   
+
+## 병렬   
+
+C1 + C2   
+
+# 자석의 자기작용   
+
+```
+   전기     vs      자기   
+기전력 E[V]    기자력   F = NI[AT]   
+전류   I[A]    자속     Φ [wb]
+저항   R[Ω]    자기저항 Rm [AT/wb]
+유절율 ε[F/m]  투자율   μ[H/m]   
+ε = ε0 εs      μ = μ0 μs
+
+ε0 = 8.855 * 10^-12
+F = 9 * 10^9 * Q1 Q2/r^2
+
+μ0 = 4𝝅 *  10^-7   
+F = 6.33 * 10^4 * m1 m2/r^2
+```   
+
+# 전류의 자기작용   
+
+## 앙페르의 오른손법칙   
+
+![Alt text](../../../../../img/electricity/hand.png)   
+[출처](https://en.wikipedia.org/wiki/Right-hand_rule)   
+
+전류 -> 자기장의 방향   
+
+![Alt text](../../../../../img/electricity/s.png)   
+[출처](http://study.zum.com/book/12981)   
+
+   + 직선도체   
+![Alt text](../../../../../img/electricity/ja1.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2016/12/blog-post_52.html)   
+H = I/2𝝅r [AT/m]   
+
+   + 환상 솔레노이드   
+![Alt text](../../../../../img/electricity/ja2.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2016/12/blog-post_52.html)   
+H = NI/2𝝅r [AT/m]   
+
+   + 원형코일   
+![Alt text](../../../../../img/electricity/ja3.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2016/12/blog-post_52.html)   
+H = NI/2𝝅r [AT/m]   
+
+# 비오-사바르 법칙   
+
+![Alt text](../../../../../img/electricity/bi1.jpg)   
+[출처](https://ko.wikipedia.org/wiki/%EB%B9%84%EC%98%A4-%EC%82%AC%EB%B0%94%EB%A5%B4_%EB%B2%95%EC%B9%99)   
+
+H = IΔl/4𝝅r^2 Sinθ   
+
+## 자기회로
+![Alt text](../../../../../img/electricity/ja4.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2016/12/blog-post_23.html)   
+
+H = NI/l [AT/m]   
+
+# 플레밍의 왼손법칙   
+
+![Alt text](../../../../../img/electricity/lefthand.png)   
+[출처](https://namu.wiki/w/%EB%A1%9C%EB%9F%B0%EC%B8%A0%20%ED%9E%98?from=%ED%94%8C%EB%A0%88%EB%B0%8D%EC%9D%98%20%EC%99%BC%EC%86%90%20%EB%B2%95%EC%B9%99)   
+
+# 평행도체   
+
+![Alt text](../../../../../img/electricity/ja5.jpg)   
+[출처](https://dic.kumsung.co.kr/web/smart/detail.do?headwordId=1537&pg=2&findCategory=B002004&findBookId=26&findPhoneme=%E3%84%B4)   
+
+F = 2I1I2/r * 10^-7 [N/m]   
+
+# 전자유도와 인덕턴스   
+
+![Alt text](../../../../../img/electricity/jeon.png)   
+[출처](http://study.zum.com/book/12763)   
+
+유도기전력 e = -n ΔΦ/Δt
+
