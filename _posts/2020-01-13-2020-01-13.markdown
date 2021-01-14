@@ -83,7 +83,7 @@ H = NI/2𝝅r [AT/m]
    + 원형코일   
 ![Alt text](../../../../../img/electricity/ja3.png)   
 [출처](http://k3-electromagnetics.blogspot.com/2016/12/blog-post_52.html)   
-H = NI/2𝝅r [AT/m]   
+H = NI/2r [AT/m]
 
 # 비오-사바르 법칙   
 

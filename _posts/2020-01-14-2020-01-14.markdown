@@ -1,0 +1,120 @@
+---
+layout: post
+title:  "2020-01-14"
+date:   2020-01-14= 21:36:00 +530
+categories: Electricity ElectricalTheory
+---
+
+# 교류의 발생
+
+![Alt text](../../../../../img/electricity/AC2.png)   
+[출처](https://physics.stackexchange.com/questions/461021/why-is-there-no-current-induced-when-the-coil-is-vertical-in-an-ac-generator)   
+
+각속도 = 각도/시간   
+
+호도법 [rad]   
+𝝅[rad] = 180   
+2𝝅 = 360   
+
+w = Θ/t [rad/sec] = 2𝝅/t = 2𝝅 * 1/t   
+
+# 주파수와 위상   
+
+![Alt text](../../../../../img/electricity/AC3.gif)   
+[출처](http://m.blog.daum.net/airconsos/8106552)   
+
+주파수 : 1초에 몇 사이클   
+주기 : 1사이클의 시간   
+
+f = 1/t, T = 1/f   
+
+순싯값 : v = VmSinwt   
+실효값 : 최댓값 * 0.707   
+평균값: 최댓값 * 0.637
+    
+벡터 : 크기 + 방향   
+스칼라 : 크기   
+
+# 교류전류에 대한 RLC 작용   
+
+```
+      직류          교류    
+
+R     방해          방해   
+                              
+L     유도          방해  유도성리액턴스 Xl = wl = 2𝝅fl
+
+C     저장          방해  용량성리액턴스 Xc 1/wc = 1/2𝝅fc
+
+리액턴스 X = L + C   
+임피던스 Z = R + L + C
+```   
+
+## R만의 회로   
+
+![Alt text](../../../../../img/electricity/ACR.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2017/07/r.html)   
+
+I = **V/R**   
+
+V = VmSinwt
+
+## L만의 회로   
+
+![Alt text](../../../../../img/electricity/ACL.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2017/07/l.html)   
+
+I = V/Xl = V/wl = **V/2𝝅fl**   
+
+V = VmSinwt + 𝝅/2
+
+## C만의 회로   
+
+![Alt text](../../../../../img/electricity/ACC.png)   
+[출처](http://k3-electromagnetics.blogspot.com/2017/07/c.html)   
+
+I = V/Xc = V/1/sc = wcv = **2𝝅fcv**   
+
+V = VmSinwt - 𝝅/2   
+
+# RLC 회로 계산   
+
+I = V/Z   
+
+Z^2 = R^2 = X2   
+
+Z = √R^2 + X^2   
+ = √R^2 + (Xl - Xc)^2   
+ = √R^2 + (wl - 1/wc)^2   
+ = **√R^2 + (2𝝅fl - 1/2𝝅fc)^2**   
+
+## 공진   
+
+![Alt text](../../../../../img/electricity/X.png)   
+
+### 직렬 공진
+
+Z = √R^2 + (0)^2   
+ = Z = √R^2   
+ = Z = R   
+
+Z = R   
+   + Z가 최소   
+
+I = V/Z   
+   + I는 최대   
+
+### 공진 주파수
+f= 1/2𝝅√LC   
+
+# 역률   
+
+R 유효전력   
+L 피상전력   
+C 무효전력   
+
+피상전력 Pa = VI [VA]   
+유효전력 P = VICosΘ [W]   
+무효전력 Pr = VISinΘ [VAR]   
+
+Pa = √P^2 + Pr^2
