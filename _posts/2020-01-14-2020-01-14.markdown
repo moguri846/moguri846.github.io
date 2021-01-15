@@ -117,4 +117,37 @@ C 무효전력
 유효전력 P = VICosΘ [W]   
 무효전력 Pr = VISinΘ [VAR]   
 
-Pa = √P^2 + Pr^2
+Pa = √P^2 + Pr^2   
+
+# 3상 교류   
+
+![Alt text](../../../../../img/electricity/ACACAC.png)   
+[출처](https://m.blog.naver.com/201298/220704366202)   
+
+![Alt text](../../../../../img/electricity/AC120.png)   
+
+Va + Vb + Vc = 0   
+
+# Y 결선   
+
+![Alt text](../../../../../img/electricity/Y.png)   
+[출처](http://blog.daum.net/cyber1995/105)   
+
+# Δ 결선   
+
+![Alt text](../../../../../img/electricity/delta.png)   
+[출처](http://blog.daum.net/cyber1995/105)   
+
+# Y - Δ 변환   
+
+ZΔ = 3Zy   
+
+![Alt text](../../../../../img/electricity/YY.png)   
+
+P = P1 + P2 + P3   
+P = √3 VICosΘ   
+
+# 전력용 콘덴서   
+
+Q = P (SinΘ1/CosΘ1 - SinΘ2/CosΘ2)   
+ = P (√1-Cos^2Θ1/CosΘ1 - √1-Cos^2Θ2/CosΘ2)

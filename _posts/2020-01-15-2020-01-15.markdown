@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "2020-01-15"
+date:   2020-01-15= 21:36:00 +530
+categories: Electricity ElectricMachine
+---
+
+# 직류기의 원리와 구조   
+
+직류기 : 직류 발전기 + 직류 전동기
+
+![Alt text](../../../../../img/electricity/DC2.png)   
+[출처](https://riveterde.tistory.com/58)   
+
+직류기의 3대 요소   
+
+   + 계자 : 자속 발생   
+   + 전기자: 자속을 끊고 기전력 발생
+   + 정류자: AC -> DC   
+
+## 파권, 중권   
+
+![Alt text](../../../../../img/electricity/lw.png)   
+[출처](https://m.blog.naver.com/PostView.nhn?blogId=casd00&logNo=221433589212&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
+![Alt text](../../../../../img/electricity/lwy.jpg)   
+[출처](https://m.blog.naver.com/PostView.nhn?blogId=casd00&logNo=221433589212&proxyReferer=https:%2F%2Fwww.google.com%2F)   
+
+# 유기기전력   
+
+E = PZΦ * N/60a   
+
+   + P : 극수   
+   + Z : 총 도체수
+   + Φ : 자속   
+   + N : rpm   
+   + a : 병렬 회로수   
+
+PZ/60a = K   
+E = KΦN   
+
+E ∝ Φ   
+E ∝ N   
+
+# 직류 발전기의 특징   
+
+![Alt text](../../../../../img/electricity/taja.jpg)   
+[출처](http://www.ei.co.kr/content/view.asp?idx=6412)   
+
+   + 타여자 : **V = E - IaRa**   
+   + 자여자(분권) : **V = E - IaRa**  
+   + 자여자(직권) : V = E - IaRa - IfRf = **E - I(Ra + Rf)**   
+
+# 전압 변동률   
+
+V = E - IaRa   
+무부하 V = E
+
+ε = 무부하 - 정격/정격 * 100%   
+ = Vo - Vn/Vn * 100%   
+
+# 전기자 반작용   
+
+주자속이 감소
+
+![Alt text](../../../../../img/electricity/JB.png)   
+[출처](http://wiki.modulestudy.com/index.php/2.5_%EC%A0%84%EA%B8%B0%EC%9E%90_%EB%B0%98%EC%9E%91%EC%9A%A9)   
+
+대책   
+   + 보상권선 설치(유효)
+   + 추가 보극 설치
+   + 중성축 이동
