@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "2020-01-17"
+date:   2020-01-17= 23:56:00 +530
+categories: Electricity ElectricMachine
+---
+
+# 슬립   
+
+S = Ns - N/Ns * 100%   
+
+S = 1, N = 0 **정지**   
+
+S = 0, Ns = N **동기속도로 회전** 가장 이상적   
+
+**0 < S < 1**     
+
+N = (1 - S)Ns   
+ = (1 - S) 120*f/P   
+ = ηNs   
+
+η = N/Ns   
+
+# 단상 유도 전동기   
+
+**혼자서 출발을 못 함** 콘덴서를 넣어서 구동   
+
+# 유도 전동기 특성   
+토크 , 1차 전류, 역률
+
+## 비례추이   
+
+   + 최대토크는 항상 일정   
+   + 2차 저항이 클스록 기동토크 ↑, 기동전류 ↓
+   + 슬립 s는 2차저항에 비례   
+
+## 토크 특성   
+ て = 0.975 P/N [kg * m]   
+ て ∝ V^2   
+
+# 동기기  
+
+## 권선법   
+전절권, 집중권 : 전기 많이 만듦
+
+단절권, 분포권 : 3고조파 제거 -> 파형 개선  
+
+# 전기자 반작용  
+ 
+![Alt text](../../../../../img/electricity/DJB.jpg)   
+[출처](https://m.blog.naver.com/PostView.nhn?blogId=chotem&logNo=220626632196&proxyReferer=https:%2F%2Fwww.google.com%2F) 
+
+
+
+
