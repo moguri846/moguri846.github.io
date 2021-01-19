@@ -10,7 +10,7 @@ categories: Electricity ElectricMachine
 ![Alt text](../../../../../img/electricity/DBP.gif)   
 [출처](https://rlcnf.net/bbs/board.php?bo_table=electricity&wr_id=1222)   
 
-포화율 = **c`c/bc`**   
+포화율 = **c바c/bc바**   
 
 ## 전압 변동률
 ε = 무 - 정/정 * 100%   
@@ -92,4 +92,27 @@ K = Is/In
 ## TRIAC   
 
 ![Alt text](../../../../../img/electricity/TRIAC.png)   
-[출처](https://article2.tistory.com/15)
+[출처](https://article2.tistory.com/15)   
+
+# 정류회로   
+
+## 반파, 전파 정류 회로   
+
+![Alt text](../../../../../img/electricity/BPJP.jpg)   
+[출처](https://www.rohm.co.kr/electronics-basics/ac-dc-converters/acdc_what2)   
+
+```
+      단상     3상
+반파  0.45     1.17
+
+전파  0.9      1.35 맥동률이 가장 낮다
+```   
+
+# 전력 변환 회로   
+
+DC -> DC : **초퍼**   
+DC -> AC : **인버터**   
+AC -> DC : **컨버터**   
+AC -> AC : **사이클로 컨버터**   
+
+
