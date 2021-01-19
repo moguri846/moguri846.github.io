@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "2020-01-19"
+date:   2020-01-19= 23:56:00 +530
+categories: Electricity ElectricMachine
+---
+
+# 동기발전기   
+
+![Alt text](../../../../../img/electricity/DBP.gif)   
+[출처](https://rlcnf.net/bbs/board.php?bo_table=electricity&wr_id=1222)   
+
+포화율 = **c`c/bc`**   
+
+## 전압 변동률
+ε = 무 - 정/정 * 100%   
+
+## 병렬   
+
+### 같아야 하는 것   
+
+   + 전압 -> 무효순환전류
+   + 주파수
+   + 상 순서
+   + 위상 -> 유효순환전류(동기화력)
+   + 파형
+
+### 달라도 되는 것   
+
+   + 출력
+   + 전류   
+
+# 난조   
+
+![Alt text](../../../../../img/electricity/NJ.png)   
+[출처](https://m.blog.naver.com/PostView.nhn?blogId=redpkzo&logNo=221168109315&proxyReferer=https:%2F%2Fwww.google.com%2F)   
+
+## 원인   
+   + 원동기의 조속기가 너무 예민한 경우
+   + 전기자 저항이 너무 큰 경우
+   + 부하가 많이 걸릴 경우
+   + 관성 모멘트가 적은 경우   
+
+## 해결   
+   + 제동권선 설치
+   + 관성 모멘트 크게 함
+   + 조속기를 예민하게 하지 않는다
+   + 고조파 제거   
+
+# 단락비   
+
+K = Is/In   
+
+단락비가 크다   
+-> Z가 작다   
+-> 전압 변동률이 작다   
+-> 전기자 반작용이 작다   
+
+# V곡선   
+
+![Alt text](../../../../../img/electricity/V.png)   
+[출처](https://m.blog.naver.com/PostView.nhn?blogId=redpkzo&logNo=221171256662&proxyReferer=https:%2F%2Fwww.google.com%2F)   
+
+## 기동법   
+
+   + 자기 기동법
+   + 유도 전동기법   
+
+# 전력용 반도체소자   
+
+## PN
+![Alt text](../../../../../img/electricity/PN.png)   
+[출처](http://egloos.zum.com/kimjaeyeon/v/7074912)     
+
+## SCR
+![Alt text](../../../../../img/electricity/SCR.png)   
+[출처](https://instrumentationtools.com/topic/silicon-controlled-rectifier-scr/)   
+
+### trun on 조건   
+
+   + A +, K -, G 전류   
+
+### trun off 조건   
+
+   + A -, K +
+   + A -> K 유지전류 밑으로   
+
+## GTO   
+
+자기소호 가능   
+
+## TRIAC   
+
+![Alt text](../../../../../img/electricity/TRIAC.png)   
+[출처](https://article2.tistory.com/15)
